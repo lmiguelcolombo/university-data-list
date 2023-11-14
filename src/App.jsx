@@ -52,6 +52,40 @@ function UniversitySearch() {
         </div>
         <button type="submit">Search</button>
       </form>
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Country</th>
+            <th>Domains</th>
+          </tr>
+        </thead>
+        <tbody>
+          {universities.map((university, k) => (
+            <tr key={k}>
+              <td>
+                <a
+                  href={university.web_pages[0]}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {university.name}
+                </a>
+              </td>
+              <td>{university.country}</td>
+              <td>
+                <a
+                  href={university.web_pages[0]}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {university.domains}
+                </a>
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
     </div>
   );
 }
