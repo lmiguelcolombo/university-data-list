@@ -62,3 +62,34 @@ button {
 button:hover {
   background-color: #1976d2;
 }
+
+table {
+  width: 95%;
+  border-collapse: collapse;
+
+  margin-top: 3rem;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+thead th {
+  background-color: #4c53af;
+  color: white;
+  text-align: center;
+}
+
+tbody a {
+  color: #333;
+  cursor: pointer;
+
+  transition: color 0.3s;
+}
+
+tbody a:hover {
+  color: #4c53af;
+}
